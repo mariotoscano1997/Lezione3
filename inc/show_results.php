@@ -5,12 +5,13 @@ if(isset($_POST['user']) && isset($_POST['pass'])){
 		echo "<br><img src='assets/img/maurizio.jpg'>";
 		?>
 		<script type="text/javascript">
-			$('#formAmministrazione').html('');
+			$('#formAmministrazione').hide();
 		</script>
-<?php
+
+		<?php
 	}
 	else
-	echo 'Credenziali errate';
+		echo 'Credenziali errate';
 }
 else{
 	echo 'Eseguire il login per poter vedere il contenuto di questa pagina';
